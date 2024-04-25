@@ -8,3 +8,6 @@ import math
 
 # %%
 
+df = pd.read_csv("../data/raw/test.csv", index_col=[0])
+df.head()
+# %%
