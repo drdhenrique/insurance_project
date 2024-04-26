@@ -1,4 +1,4 @@
-insurance
+# Insurance Claims Prediction Project
 ==============================
 
 The objective of this project is to model the auto insurance claim probability in next year for a entire policyholder portfolio, using machine learning algorithms.
