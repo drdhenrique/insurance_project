@@ -44,9 +44,6 @@ desc_raw_data = df_raw.describe()
 
 desc_raw_data.to_csv('../data/interim/desc_raw_data')
 
-
-
-
 # %%
 df = pd.read_csv('../data/interim/df.csv', index_col=[0])
 df.head()
