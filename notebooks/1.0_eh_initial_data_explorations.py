@@ -46,7 +46,7 @@ desc_raw_data.to_csv('../data/interim/desc_raw_data')
 
 # %%
 df = pd.read_csv('../data/interim/df.csv', index_col=[0])
-df.head()
+df.shape
 # %%
 
 1/(y_train.value_counts()[0]/y_train.value_counts()[1])
