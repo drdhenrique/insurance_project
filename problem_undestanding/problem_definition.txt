@@ -1,14 +1,16 @@
+## This text needs to be improved
+
 Insurance is like a game, as stated in game theory. 
 
 There is a insurance company and there is a group of policyholders, acting as the two agents in the game.
 
 But the total amount of money is very unbalanced. 
 
-Lets suppose that there's a total of 100 insureds, each with as asset worth $100_000. 
+Lets suppose that there's a total of 100 insureds, each with as asset worth $100_000 and only a probability of 0.01 of a claim. 
 
-So the policyholders' total amount is $100_000_000. This is a lot of money!
+So the policyholders' total amount is $100_000_000. This is a lot of money! Probably surpassing (a lot) the 'rewards' charged from the company. The computations details are not important here, but the "fair" price charged from the insured clients sum up to only $1_000_000. 
 
-In this context, the company needs to charge not only the fair price, taking into account the probabilities of an eventuality, but some extra load from each insured. Also, the company has its own operations costs, and so there's a need to charge even more, to pay all the obligations.
+In this context, and remembering the "Gambler's ruin problem", the company needs to charge not only the fair price, taking into account the probabilities of an eventuality, but some extra load from each insured. Also, the company has its own operations costs, and so there's a need to charge even more, to pay all the obligations.
 
 With all this setup in mind, there's a clear interest in predict with accuracy the probability of a claim from one of the insureds in the portfolio.
 

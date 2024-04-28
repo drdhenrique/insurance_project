@@ -26,13 +26,13 @@ pd.set_option( 'display.expand_frame_repr', False )
 sns.set_theme(style="ticks", color_codes=True)
 
 
-# %%
+
 
 # data import 
 # sampling a subset to work on
 # save the information .describe() from raw_data
 
-
+# %%
 df_raw = pd.read_csv("../data/raw/train.csv", index_col=[0])
 
 X = df_raw.drop('target', axis = 1)
@@ -42,11 +42,5 @@ X_train, X_test, y_train, y_test = train_test_split(X,y, test_size= 0.2, stratif
 
 desc_raw_data = df_raw.describe()
 
-desc_raw_data.to_csv('../data/interim/desc_raw_data')
+desc_raw_data.to_csv('../data/interim/desc_raw_data') 
 
-# %%
-df = pd.read_csv('../data/interim/df.csv', index_col=[0])
-df.shape
-# %%
-
-1/(y_train.value_counts()[0]/y_train.value_counts()[1])
