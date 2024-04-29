@@ -38,9 +38,8 @@ df_raw = pd.read_csv("../data/raw/train.csv", index_col=[0])
 X = df_raw.drop('target', axis = 1)
 y = df_raw['target']
 
-X_train, X_test, y_train, y_test = train_test_split(X,y, test_size= 0.2, stratify= y)
+X_train, X_test, y_train, y_test = train_test_split(X,y, test_size= 0.2, stratify= y, random_state= 31415)
 
-desc_raw_data = df_raw.describe()
+X_train, X_dev, y_train, y_dev = train_test_split(X_train,y_train, test_size= 0.25, stratify= y_train, random_state= 31415)
 
-desc_raw_data.to_csv('../data/interim/desc_raw_data') 
-
+# %%
