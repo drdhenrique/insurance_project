@@ -43,3 +43,11 @@ X_train, X_test, y_train, y_test = train_test_split(X,y, test_size= 0.2, stratif
 X_train, X_dev, y_train, y_dev = train_test_split(X_train,y_train, test_size= 0.25, stratify= y_train, random_state= 31415)
 
 # %%
+
+print(f'O shape de X_train, X_test e X_dev são, respectivamente: {X_train.shape}, {X_test.shape} e {X_dev.shape}')
+# %%
+X_test.head()
+
+# %%
+X_dev.head()
+
