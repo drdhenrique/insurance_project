@@ -15,3 +15,6 @@ In this context, and remembering the "Gambler's ruin problem", the company needs
 With all this setup in mind, there's a clear interest in predict with accuracy the probability of a claim from one of the insureds in the portfolio.
 
 Therefore, the main objective of this project is use a dataset from Porto Seguro's insurance company to predict the next year probability of claim, for each client.
+
+Additional information could be encountered in my medium:
+https://medium.com/@drdhenri/introduction-to-risk-theory-applications-to-insurance-part-1-16bf6a14fb58
