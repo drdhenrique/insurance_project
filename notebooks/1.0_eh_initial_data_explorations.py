@@ -81,8 +81,32 @@ df_ind = df_raw[[x for x in df_raw.columns if 'ind' in x]]
 df_bin = df_raw[[x for x in df_raw.columns if 'bin' in x]]
 df_cat = df_raw[[x for x in df_raw.columns if 'cat' in x]]
 
-
-
 # %%
 
-sns.barplot(df_bin.ps_ind_18_bin)
+# Univariated analysis - car characteristics
+
+df_car.head()
+# %%
+sns.countplot(data=df_car, x = 'ps_car_01_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_02_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_03_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_04_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_05_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_06_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_07_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_08_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_09_cat');
+# %%
+sns.countplot(data=df_car, x = 'ps_car_10_cat');
+# %%
+sns.histplot(data=df_car, x = 'ps_car_11_cat');
+# %%
+sns.histplot(data=df_car, x = 'ps_car_11_cat');
