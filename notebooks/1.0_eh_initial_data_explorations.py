@@ -5,6 +5,7 @@
 import pandas as pd
 import numpy as np
 import seaborn as sns
+from scipy import stats
 import matplotlib.pyplot as plt
 import math
 from IPython.core.display import HTML
@@ -23,7 +24,7 @@ display( HTML( '<style>.container { width:100% !important; }</style>') )
 pd.options.display.max_columns = None
 pd.options.display.max_rows = None
 pd.set_option( 'display.expand_frame_repr', False )
-sns.set_theme(style="ticks", color_codes=True)
+sns.set_theme()
 
 # %%
 df_raw = pd.read_csv("../data/raw/train.csv", index_col=[0])
@@ -82,12 +83,18 @@ df_bin = df_raw[[x for x in df_raw.columns if 'bin' in x]]
 df_cat = df_raw[[x for x in df_raw.columns if 'cat' in x]]
 
 # %%
-
-# Univariated analysis - car characteristics
-
-df_car.head()
+sns.countplot(data=df_raw, x = 'target', hue= 'target')
 # %%
-sns.countplot(data=df_car, x = 'ps_car_01_cat');
+
+# Univariated analysis - binary columns
+
+df_bin.head()
+# %%
+plt.matshow(df_bin.corr());
+
+# %%
+
+sns.heatmap(df_bin.corr().round(2))
 # %%
 sns.countplot(data=df_car, x = 'ps_car_02_cat');
 # %%
@@ -106,7 +113,5 @@ sns.countplot(data=df_car, x = 'ps_car_08_cat');
 sns.countplot(data=df_car, x = 'ps_car_09_cat');
 # %%
 sns.countplot(data=df_car, x = 'ps_car_10_cat');
-# %%
-sns.histplot(data=df_car, x = 'ps_car_11_cat');
 # %%
 sns.histplot(data=df_car, x = 'ps_car_11_cat');
