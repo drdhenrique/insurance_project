@@ -121,3 +121,4 @@ sns.histplot(data=df_car, x = 'ps_car_11_cat');
 
 # visualizing features vs target
 
+# %%
